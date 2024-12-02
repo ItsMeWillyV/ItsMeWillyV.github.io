@@ -52,7 +52,6 @@ main {
     transform: rotate(360deg) scale(1.05);
 }
 
-
 /* 
     Form
 */
@@ -96,7 +95,6 @@ a {
     color: #333333;
     text-decoration: none;
 }
-
 
 .bg {
     position: fixed;
@@ -148,8 +146,6 @@ a {
     transform: scale(1.25);
 }
 
-
-
 .md {
     display: none;
 }
@@ -183,5 +179,22 @@ a {
 
     .head img {
         width: 128px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .head {
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    body {
+        font-size: 0.8em;
     }
 }
