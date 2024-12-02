@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+
+/* 
+    Main
+*/
+
+body {
+    font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+main {
+    background-color: #f4f4f4;
+    color: #000000;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+}
+
+/* 
+    Page head
+*/
+
+.head {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    text-align: center;
+}
+
+.head h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+.head p {
+    font-size: 2em;
+    margin: 0;
+}
+
+.head img {
+    width: 256px;
+    margin: auto;
+    transition: transform 1s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.head img:hover {
+    transition: transform 2s ease-in-out;
+    transform: rotate(360deg) scale(1.05);
+}
+
+
+/* 
+    Form
+*/
+
+form {
+    width: 80%;
+    margin: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+}
+
+form button {
+    box-sizing: content-box;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+form button:hover {
+    background-color: #000000;
+    transform: scale(1.05);
+}
+
+/* 
+    Miscelaneous
+*/
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+
+.bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.grid {   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5px;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lobster {
+    font-family: "Lobster", sans-serif;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.2s;
+    border-radius: 5px;
+    border: 1px solid #333333;
+    padding: 2px;
+}
+
+.card img {
+    width: 30%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+    transform: scale(1.25);
+}
+
+
+
+.md {
+    display: none;
+}
+
+/* 
+    Media queries
+*/
+
+@media screen and (max-width: 1050px) {
+    main {
+        width: 90%;
+    }
+
+    .grid, .head {
+        grid-template-columns: 1fr;
+    }
+
+    .head h1 {
+        margin-top: 0;
+    }
+
+    .md {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .head {
+        font-size: 0.75em;
+    }
+
+    .head img {
+        width: 128px;
+    }
+}
