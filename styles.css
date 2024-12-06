@@ -211,7 +211,7 @@ form button:hover {
     transform: scale(1.1);
 }
 
-.social {
+.social a {
     text-decoration: none;
 	color: #ffffff;
 }
