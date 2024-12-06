@@ -185,6 +185,17 @@ form button:hover {
     display: none;
 }
 
+.badge {
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.badge:hover {
+    transform: scale(1.1);
+}
+
 /* 
     Media queries
 */
@@ -225,6 +236,10 @@ form button:hover {
 @media screen and (max-width: 460px) {
     .head {
         font-size: 0.6em;
+    }
+
+    .badge {
+        width: 150px;
     }
 }
 
