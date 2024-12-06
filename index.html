@@ -7,6 +7,9 @@
 -->
 
 <head>
+    <!-- Include FontAwesome -->
+    <script src="https://kit.fontawesome.com/87c28b5bd0.js" crossorigin="anonymous"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="media/portrait-transparent.png">
@@ -20,14 +23,15 @@
 <body>
     <!-- Background Image -->
     <img id="bg" src="media/bg.gif" alt="">
-    <main>
-        <div class="head lobster">
-            <img src="media/portrait.png" alt="portrait" class="round">
-            <div>
-                <h1>William&nbsp;Vanderpool</h1>
-                <p>Makes rocks do cool things</p>
-            </div>
+    
+    <header class="lobster">
+        <img src="media/portrait.png" alt="portrait" class="round">
+        <div>
+            <h1>William&nbsp;Vanderpool</h1>
+            <p>Makes rocks do cool things</p>
         </div>
+    </header>
+    <main>
         <hr>
         <div class="grid">
             <div>
@@ -89,13 +93,6 @@
                 </table>
             </div>
             <div>
-                <h1 class="lobster">Certifications</h1>
-                <hr class="md">
-                <a href="https://www.credly.com/badges/405a3bd0-7225-49ea-9e1d-5e59ba313d68/public_url" target="_blank">
-                    <img class="badge" src="media/html_badge.png" alt="icon">
-                </a>
-            </div>
-            <div>
                 <h1 class="lobster">Contact</h1>
                 <hr class="md">
                 <form action="#" method="get">
@@ -110,7 +107,23 @@
                 <p>This form is not functional</p>
             </div>
         </div>
+        <div>
+            <h1 class="lobster">Certifications</h1>
+            <hr class="md">
+            <div class="flex">
+                <a href="https://www.credly.com/badges/405a3bd0-7225-49ea-9e1d-5e59ba313d68/public_url" target="_blank">
+                    <img class="badge" src="media/html_badge.png" alt="icon">
+                </a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <p class="lobster">&copy; William Vanderpool 2024</p>
+        <p class="social">
+            <a href="https://github.com/ItsMeWillyV" class="fa-brands fa-github" target="_blank"> </a>
+            <a href="https://discord.gg/BMpXs3wAnX" class="fa-brands fa-discord" target="_blank"> </a>
+        </p>
+    </footer>
 </body>
 
 </html>

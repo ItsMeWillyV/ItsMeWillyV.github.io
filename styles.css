@@ -27,44 +27,57 @@ body {
 
 main {
     background-color: #f4f4f4;
-    color: #000000;
     width: 75%;
     margin: auto;
     padding: 10px;
-    border-radius: 5px;
+    text-align: center;
 }
 
 /* 
-    Page head
+    Header & Footer
 */
 
-.head {
+header {
+    background-color: #f4f4f4;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 5px;
     text-align: center;
+    width: 75%;
+    padding: 10px;
+    margin: auto;
 }
 
-.head h1 {
+header h1 {
     font-size: 4em;
     margin-bottom: 0;
 }
 
-.head p {
+header p {
     font-size: 2em;
     margin: 0;
 }
 
-.head img {
+header img {
     width: 256px;
     margin: auto;
     transition: transform 1s ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 
-.head img:hover {
+header img:hover {
     transition: transform 2s ease-in-out;
     transform: rotate(360deg) scale(1.05);
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    width: 75%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
 }
 
 /* 
@@ -75,12 +88,12 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 5px;
-    text-align: center;
 }
 
 .flex {
     display: flex;
     display: -webkit-flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -123,7 +136,8 @@ table {
 }
 
 td, th {
-    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
     text-align: left;
     padding: 8px;
     text-align: center;
@@ -190,10 +204,16 @@ form button:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     transition: 0.5s;
+    margin: 15px;
 }
 
 .badge:hover {
     transform: scale(1.1);
+}
+
+.social {
+    text-decoration: none;
+	color: #ffffff;
 }
 
 /* 
@@ -201,15 +221,15 @@ form button:hover {
 */
 
 @media screen and (max-width: 1050px) {
-    main {
+    main, header, footer {
         width: 90%;
     }
 
-    .grid, .head {
+    .grid, header {
         grid-template-columns: 1fr;
     }
 
-    .head h1 {
+    header h1 {
         margin-top: 0;
     }
 
@@ -219,22 +239,21 @@ form button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    .head {
+    header {
         font-size: 0.75em;
     }
 
-    .head img {
+    header img {
         width: 128px;
     }
 
-    main {
+    main, header, footer {
         width: 95%;
     }
-
 }
 
 @media screen and (max-width: 460px) {
-    .head {
+    header {
         font-size: 0.6em;
     }
 
