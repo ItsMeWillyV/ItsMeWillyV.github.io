@@ -46,6 +46,8 @@ header {
     width: 75%;
     padding: 10px;
     margin: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 header h1 {
@@ -77,6 +79,8 @@ footer {
     margin: auto;
     padding: 10px;
     text-align: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 footer p {
